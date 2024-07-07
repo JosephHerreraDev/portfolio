@@ -70,13 +70,37 @@
     ],
     "skills": [
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
+            "name": "Html"
+        },
+        {
+            "name": "Css"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "CSharp"
+        },
+        {
+            "name": "Sql"
+        },
+        {
+            "name": "Nodejs"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "Github"
+        },
+        {
+            "name": "Android"
+        },
+        {
+            "name": "Networking"
         }
     ],
     "languages": [
@@ -108,7 +132,19 @@
             "highlights": [
                 "Builed with React Native"
             ],
-            "url": "https://project.com/"
+            "url": ""
+        },
+        {
+            "name": "Data mining",
+            "isActive": null,
+            "startDate": "2024-03-07",
+            "endDate": "Currently working",
+            "description": "Using Google Collab with Python I made an analysis of a data sample for data mining.",
+            "highlights": [
+                "Python",
+                "Data Mining"
+            ],
+            "url": "https://github.com/JosephHerreraDev/mineria_de_datos"
         }
     ]
 }
