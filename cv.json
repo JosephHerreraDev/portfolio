@@ -5,11 +5,11 @@
         "image": "https://avatars.githubusercontent.com/u/60113321?s=400&u=dd66434578596277ac584fbfac82e3d407e854bb&v=4",
         "email": "josephherreraleon@gmail.com",
         "phone": "(429) 555-4321",
-        "url": "https://johndoe.com",
+        "url": "https://josephherrera-cv.vercel.app/",
         "summary": "I have experience developing small projects and I'm looking to expand my knowledge. I have developed with c# and javascript, as a full-stack developer. I love working on teams of people that share my goal, make awesome things.",
         "location": {
             "address": "",
-            "postalCode": "",
+            "postalCode": "36960",
             "city": "Cueramaro",
             "countryCode": "MX",
             "region": "Guanajuato"
@@ -72,10 +72,16 @@
     ],
     "certificates": [
         {
-            "name": "Certificate",
-            "date": "2021-11-07",
-            "issuer": "Company",
-            "url": "https://certificate.com"
+            "name": "Curso de Fundamentos de Diseño de Interfaces UX/UI",
+            "date": "2024-01-01",
+            "issuer": "Platzi",
+            "url": "https://platzi.com/p/usaeasysoft/curso/5184-basico-ui/diploma/detalle/"
+        },
+        {
+            "name": "Curso Profesional de Git y GitHub",
+            "date": "2023-05-01",
+            "issuer": "Platzi",
+            "url": "https://platzi.com/p/usaeasysoft/curso/1557-git-github/diploma/detalle/"
         }
     ],
     "skills": [
