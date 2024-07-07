@@ -58,6 +58,16 @@
             "courses": [
                 "Programación movil"
             ]
+        },
+        {
+            "institution": "Colegio de Estudios Científicos y Tecnológicos",
+            "url": "https://www.cecyteg.edu.mx/cecyteg/",
+            "area": "Support and Maintenance of Computers",
+            "studyType": "High School",
+            "startDate": "2017-08-06",
+            "endDate": "2020-08-06",
+            "score": "9.0",
+            "courses": []
         }
     ],
     "certificates": [
