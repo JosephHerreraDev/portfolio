@@ -101,6 +101,7 @@
     "projects": [
         {
             "name": "Mascotapp",
+            "isActive": "true",
             "startDate": "2024-03-07",
             "endDate": "Currently working",
             "description": "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
