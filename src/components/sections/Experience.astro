@@ -14,6 +14,7 @@ import { work } from "@cv";
                     position,
                     summary,
                     highlights,
+                    url,
                 }) => {
                     const startYear = new Date(startDate).getFullYear();
                     const startMonth = new Intl.DateTimeFormat("en", {
@@ -37,7 +38,15 @@ import { work } from "@cv";
                             <article>
                                 <header>
                                     <div>
-                                        <h3>{name}</h3>
+                                        <h3>
+                                            <a
+                                                href={url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                {name}
+                                            </a>{" "}
+                                        </h3>
                                         <h4>{position}</h4>
                                     </div>
                                     <time>{years}</time>
@@ -77,5 +86,12 @@ import { work } from "@cv";
     time {
         color: #555;
         font-size: 0.85rem;
+    }
+    article a {
+        color: #111;
+    }
+
+    article a:hover {
+        text-decoration: underline;
     }
 </style>
