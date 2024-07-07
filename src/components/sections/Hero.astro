@@ -1,5 +1,6 @@
 ---
-import { basics } from "@cv";
+import { basics, languages } from "@cv";
+
 import Section from "@/components/Section.astro";
 
 import Email from "@/icons/Email.astro";
@@ -8,6 +9,7 @@ import X from "@/icons/X.astro";
 import Linkedin from "@/icons/Linkedin.astro";
 import Github from "@/icons/Github.astro";
 import Worldmap from "@/icons/Worldmap.astro";
+import Language from "@/icons/Language.astro";
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
@@ -21,6 +23,20 @@ const SOCIAL_ICONS: Record<string, any> = {
 const linkedInfo = profiles.find(({ network }) => network === "Linkedin");
 const linkedUrl = linkedInfo?.url;
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(` • `);
+
+const allFluencyLevels = languages.map(({ fluency }) => fluency);
+const uniqueFluencyLevels = [...new Set(allFluencyLevels)];
+
+let languagesList;
+
+if (uniqueFluencyLevels.length === 1) {
+    const commonFluency = uniqueFluencyLevels[0];
+    languagesList = languages.map(({ language }) => language).join(' • ') + ` (${commonFluency})`;
+} else {
+    languagesList = languages
+        .map(({ language, fluency }) => `${language} (${fluency})`)
+        .join(' • ');
+}
 ---
 
 <Section>
@@ -31,6 +47,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(` • `);
             <span>
                 <Worldmap />
                 {city}, {region}
+            </span>
+                    
+            <span> 
+                <Language /> 
+                {languagesList}
             </span>
             <footer class="print">
                 <div class="print">
