@@ -1,0 +1,113 @@
+{
+    "basics": {
+        "name": "Joseph Herrera León",
+        "label": "Software Engineer Student and Full-Stack Developer",
+        "image": "/profile_picture.webp",
+        "email": "josephherreraleon@gmail.com",
+        "phone": "(429) 555-4321",
+        "url": "https://johndoe.com",
+        "summary": "I have experience developing small projects and I'm looking to expand my knowledge. I have developed with c# and javascript, as a full-stack developer. I love working on teams of people that share my goal, make awesome things.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Cueramaro",
+            "countryCode": "MX",
+            "region": "Guanajuato"
+        },
+        "profiles": [
+            {
+                "network": "Linkedin",
+                "username": "Joseph Herrera León",
+                "url": "https://www.linkedin.com/in/joseph-herrera-leon/"
+            },
+            {
+                "network": "Github",
+                "username": "JosephHerreraDev",
+                "url": "https://github.com/JosephHerreraDev"
+            },
+            {
+                "network": "X",
+                "username": "JoeDev",
+                "url": "https://x.com/JHerrera_Leon"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "MonitorApp",
+            "position": "Software Developer Intern",
+            "url": "https://www.monitorapp.io/",
+            "startDate": "2023-05-01",
+            "endDate": "2023-11-01",
+            "summary": "I worked as part of my internship, during the time in the company I learned about front-end developement with React. I also developed a project from the backend using NodeJS.",
+            "highlights": [
+                "Learned React",
+                "Learned NodeJS"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Politecnica de Penjamo",
+            "url": "https://uppenjamo.edu.mx/",
+            "area": "Software Engineering",
+            "studyType": "Bachelor",
+            "startDate": "2021-08-06",
+            "endDate": "2024-08-15",
+            "score": "9.2",
+            "courses": [
+                "Programación movil"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Certificate",
+            "date": "2021-11-07",
+            "issuer": "Company",
+            "url": "https://certificate.com"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Weight Lifting",
+            "keywords": [
+                "Gym",
+                "Workout"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Mascotapp",
+            "startDate": "2024-03-07",
+            "endDate": "Currently working",
+            "description": "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
+            "highlights": [
+                "Builed with React Native"
+            ],
+            "url": "https://project.com/"
+        }
+    ]
+}
