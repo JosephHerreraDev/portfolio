@@ -20,9 +20,7 @@ const SOCIAL_ICONS: Record<string, any> = {
     X,
 };
 
-const linkedInfo = profiles.find(({ network }) => network === "Linkedin");
-const linkedUrl = linkedInfo?.url;
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(` • `);
+const printInfo = [email, phone].filter(Boolean).join(` • `);
 
 const allFluencyLevels = languages.map(({ fluency }) => fluency);
 const uniqueFluencyLevels = [...new Set(allFluencyLevels)];
