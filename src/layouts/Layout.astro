@@ -1,5 +1,6 @@
 ---
 import { basics } from "@cv"
+import {ViewTransitions} from "astro:transitions"
 
 interface Props {
   title: string
@@ -32,6 +33,7 @@ const { image, summary, url } = basics
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content="" />
+	<ViewTransitions/>
   </head>
   <body>
     <slot />
