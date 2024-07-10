@@ -8,6 +8,7 @@ import Hero from "@/components/sections/Hero.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
 import Certifications from "@/components/sections/Certifications.astro";
+import Heading from "@/components/sections/Heading.astro";
 
 import { basics } from "@cv";
 const { name, label } = basics;
@@ -15,6 +16,7 @@ const { name, label } = basics;
 
 <Layout title={`${name} - ${label}`}>
 	<main>
+		<Heading/>
 		<Hero />
 		<About />
 		<Experience />

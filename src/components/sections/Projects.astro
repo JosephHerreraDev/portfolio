@@ -1,6 +1,7 @@
 ---
 import Section from "../Section.astro";
 import { projects } from "@cv";
+import Github from "@/icons/Github.astro";
 ---
 
 <Section title="Projects">
@@ -12,10 +13,23 @@ import { projects } from "@cv";
                         <article>
                             <header>
                                 <h3>
-                                    <a href={url} title={`See project ${name}`}>
+                                    <a
+                                        href="/work"
+                                        title={`See project ${name}`}
+                                    >
                                         {name}
                                     </a>
                                     {isActive && <span>&bull;</span>}
+                                    {url && (
+                                        <a
+                                            href={url}
+                                            title={`See project ${name} repository`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Github />
+                                        </a>
+                                    )}
                                 </h3>
 
                                 <p>{description}</p>
