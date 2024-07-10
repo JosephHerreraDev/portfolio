@@ -146,7 +146,8 @@
             "endDate": "Currently working",
             "description": "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
             "highlights": [
-                "Builed with React Native"
+                "React Native",
+                "firebase"
             ],
             "url": null
         },
