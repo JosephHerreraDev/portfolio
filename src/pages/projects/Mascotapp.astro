@@ -1,0 +1,11 @@
+---
+import Section from "../../components/Section.astro";
+import Layout from "@/layouts/Layout.astro";
+import { projects } from "@cv";
+---
+
+<Layout title="Mascotapp">
+  <Section title="Mascotapp">
+    <p>{projects[0].description}</p>
+  </Section>
+</Layout>
