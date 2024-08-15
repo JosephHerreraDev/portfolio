@@ -15,28 +15,28 @@ const { name, label } = basics;
 ---
 
 <Layout title={`${name} - ${label}`}>
-	<main>
-		<Heading/>
-		<Hero />
-		<About />
-		<Experience />
-		<Education />
-		<Certifications />
-		<Projects />
-		<Skills />
-	</main>
+  <main>
+    <!-- <Heading/> -->
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Certifications />
+    <Projects />
+    <Skills />
+  </main>
 </Layout>
 
 <style>
-	main {
-		padding: 4rem;
-		margin: auto;
-		width: 100%;
-	}
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
 
-	@media (width <= 700px) {
-		main {
-			padding: 2rem;
-		}
-	}
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
 </style>
