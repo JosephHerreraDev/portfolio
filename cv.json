@@ -1,167 +1,153 @@
 {
-    "basics": {
-        "name": "Joseph Herrera León",
-        "label": "Software Engineer Student and Full-Stack Developer",
-        "image": "https://avatars.githubusercontent.com/u/60113321?s=400&u=dd66434578596277ac584fbfac82e3d407e854bb&v=4",
-        "email": "josephherreraleon@gmail.com",
-        "phone": "(429) 146-5667",
-        "url": "https://josephherrera-cv.vercel.app/",
-        "summary": "I have experience developing small projects and I'm looking to expand my knowledge. I have developed with c# and javascript, as a full-stack developer. I love working on teams of people that share my goal, make awesome things.",
-        "location": {
-            "address": "",
-            "postalCode": "36960",
-            "city": "Cueramaro",
-            "countryCode": "MX",
-            "region": "Guanajuato"
-        },
-        "profiles": [
-            {
-                "network": "Linkedin",
-                "username": "Joseph Herrera León",
-                "url": "https://www.linkedin.com/in/joseph-herrera-leon/"
-            },
-            {
-                "network": "Github",
-                "username": "JosephHerreraDev",
-                "url": "https://github.com/JosephHerreraDev"
-            },
-            {
-                "network": "X",
-                "username": "JoeDev",
-                "url": "https://x.com/JHerrera_Leon"
-            }
-        ]
+  "basics": {
+    "name": "Joseph Herrera León",
+    "label": "Software Engineer Student and Full-Stack Developer",
+    "image": "https://avatars.githubusercontent.com/u/60113321?s=400&u=dd66434578596277ac584fbfac82e3d407e854bb&v=4",
+    "email": "josephherreraleon@gmail.com",
+    "phone": "(429) 146-5667",
+    "url": "https://josephherrera-cv.vercel.app/",
+    "summary": "I have experience developing small projects and I'm looking to expand my knowledge. I have developed with c# and javascript, as a full-stack developer. I love working on teams of people that share my goal, make awesome things.",
+    "location": {
+      "address": "",
+      "postalCode": "36960",
+      "city": "Cueramaro",
+      "countryCode": "MX",
+      "region": "Guanajuato"
     },
-    "work": [
-        {
-            "name": "MonitorApp",
-            "position": "Software Developer Intern",
-            "url": "https://www.monitorapp.io/",
-            "startDate": "2023-05-01",
-            "endDate": "2023-11-01",
-            "summary": "I worked as part of my internship, during the time in the company I learned about front-end developement with React. I also developed a project from the backend using NodeJS.",
-            "highlights": [
-                "Learned React",
-                "Learned NodeJS"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Universidad Politecnica de Penjamo",
-            "url": "https://uppenjamo.edu.mx/",
-            "area": "Software Engineering",
-            "studyType": "Bachelor",
-            "startDate": "2021-08-06",
-            "endDate": null,
-            "score": "9.2",
-            "courses": [
-                "Programación movil"
-            ]
-        },
-        {
-            "institution": "Colegio de Estudios Científicos y Tecnológicos",
-            "url": "https://www.cecyteg.edu.mx/cecyteg/",
-            "area": "Support and Maintenance of Computers",
-            "studyType": "High School",
-            "startDate": "2017-08-06",
-            "endDate": "2020-08-06",
-            "score": "9.0",
-            "courses": []
-        }
-    ],
-    "certificates": [
-        {
-            "name": "Curso de Fundamentos de Diseño de Interfaces UX/UI",
-            "date": "2024-01-01",
-            "issuer": "Platzi",
-            "url": "https://platzi.com/p/usaeasysoft/curso/5184-basico-ui/diploma/detalle/"
-        },
-        {
-            "name": "Curso Profesional de Git y GitHub",
-            "date": "2023-05-01",
-            "issuer": "Platzi",
-            "url": "https://platzi.com/p/usaeasysoft/curso/1557-git-github/diploma/detalle/"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Html"
-        },
-        {
-            "name": "Css"
-        },
-        {
-            "name": "JavaScript"
-        },
-        {
-            "name": "Python"
-        },
-        {
-            "name": "CSharp"
-        },
-        {
-            "name": "Sql"
-        },
-        {
-            "name": "Nodejs"
-        },
-        {
-            "name": "Git"
-        },
-        {
-            "name": "Github"
-        },
-        {
-            "name": "Android"
-        },
-        {
-            "name": "Networking"
-        }
-    ],
-    "languages": [
-        {
-            "language": "English",
-            "fluency": "Bilingual"
-        },
-        {
-            "language": "Spanish",
-            "fluency": "Bilingual"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Weight Lifting",
-            "keywords": [
-                "Gym",
-                "Workout"
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "name": "Mascotapp",
-            "isActive": "true",
-            "startDate": "2024-03-07",
-            "endDate": "Currently working",
-            "description": "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
-            "highlights": [
-                "React Native",
-                "firebase"
-            ],
-            "url": null
-        },
-        {
-            "name": "Data mining",
-            "isActive": null,
-            "startDate": "2024-03-07",
-            "endDate": "Currently working",
-            "description": "Using Google Collab with Python I made an analysis of a data sample for data mining.",
-            "highlights": [
-                "Python",
-                "Data Mining"
-            ],
-            "url": "https://github.com/JosephHerreraDev/mineria_de_datos"
-        }
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "Joseph Herrera León",
+        "url": "https://www.linkedin.com/in/joseph-herrera-leon/"
+      },
+      {
+        "network": "Github",
+        "username": "JosephHerreraDev",
+        "url": "https://github.com/JosephHerreraDev"
+      },
+      {
+        "network": "X",
+        "username": "JoeDev",
+        "url": "https://x.com/JHerrera_Leon"
+      }
     ]
+  },
+  "work": [
+    {
+      "name": "MonitorApp",
+      "position": "Software Developer Intern",
+      "url": "https://www.monitorapp.io/",
+      "startDate": "2023-05-01",
+      "endDate": "2023-11-01",
+      "summary": "I worked as part of my internship, during the time in the company I learned about front-end developement with React. I also developed a project from the backend using NodeJS.",
+      "highlights": ["Learned React", "Learned NodeJS"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Politecnica de Penjamo",
+      "url": "https://uppenjamo.edu.mx/",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2021-08-06",
+      "endDate": null,
+      "score": "9.2",
+      "courses": ["Programación movil"]
+    },
+    {
+      "institution": "Colegio de Estudios Científicos y Tecnológicos",
+      "url": "https://www.cecyteg.edu.mx/cecyteg/",
+      "area": "Support and Maintenance of Computers",
+      "studyType": "High School",
+      "startDate": "2017-08-06",
+      "endDate": "2020-08-06",
+      "score": "9.0",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Curso de Fundamentos de Diseño de Interfaces UX/UI",
+      "date": "2024-01-01",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/usaeasysoft/curso/5184-basico-ui/diploma/detalle/"
+    },
+    {
+      "name": "Curso Profesional de Git y GitHub",
+      "date": "2023-05-01",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/usaeasysoft/curso/1557-git-github/diploma/detalle/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Html"
+    },
+    {
+      "name": "Css"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "CSharp"
+    },
+    {
+      "name": "Sql"
+    },
+    {
+      "name": "Nodejs"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Github"
+    },
+    {
+      "name": "Android"
+    },
+    {
+      "name": "Networking"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Bilingual"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Bilingual"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Weight Lifting",
+      "keywords": ["Gym", "Workout"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mascotapp",
+      "isActive": "true",
+      "startDate": "2024-03-07",
+      "endDate": "Currently working",
+      "description": "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
+      "highlights": ["React Native", "firebase"],
+      "url": null
+    },
+    {
+      "name": "Data mining",
+      "isActive": null,
+      "startDate": "2024-03-07",
+      "endDate": "Currently working",
+      "description": "Using Google Collab with Python I made an analysis of a data sample for data mining.",
+      "highlights": ["Python", "Data Mining"],
+      "url": "https://github.com/JosephHerreraDev/mineria_de_datos"
+    }
+  ]
 }

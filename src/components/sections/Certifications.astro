@@ -5,82 +5,82 @@ import { certificates } from "@cv";
 ---
 
 <Section title="Certifications">
-    <ul>
-        {
-            certificates.map(({ name, date, issuer, url }) => {
-                const year = new Date(date).getFullYear();
-                const month = new Intl.DateTimeFormat("en", {
-                    month: "short",
-                }).format(new Date(date));
+  <ul>
+    {
+      certificates.map(({ name, date, issuer, url }) => {
+        const year = new Date(date).getFullYear();
+        const month = new Intl.DateTimeFormat("en", {
+          month: "short",
+        }).format(new Date(date));
 
-                const dateFormated = `${month} ${year}`;
-                return (
-                    <li>
-                        <article>
-                            <header>
-                                <div>
-                                    <h3>
-                                        <a
-                                            href={url}
-                                            title={`See Certification ${name}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            {name}
-                                        </a>
-                                    </h3>
-                                </div>
+        const dateFormated = `${month} ${year}`;
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>
+                    <a
+                      href={url}
+                      title={`See Certification ${name}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {name}
+                    </a>
+                  </h3>
+                </div>
 
-                                <time>{dateFormated}</time>
-                            </header>
+                <time>{dateFormated}</time>
+              </header>
 
-                            <footer>
-                                <p>{issuer}</p>
-                            </footer>
-                        </article>
-                    </li>
-                );
-            })
-        }
-    </ul>
+              <footer>
+                <p>{issuer}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
 
 <style>
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-    article h3 {
-        font-weight: 500;
-        color: #111;
-    }
+  article h3 {
+    font-weight: 500;
+    color: #111;
+  }
 
-    article a {
-        color: #111;
-    }
+  article a {
+    color: #111;
+  }
 
-    article a:hover {
-        text-decoration: underline;
-    }
+  article a:hover {
+    text-decoration: underline;
+  }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 4px;
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
 
+  time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+
+  @media (width <= 700px) {
     time {
-        color: #555;
-        font-size: 0.85rem;
-        min-width: 102px;
+      text-align: right;
     }
-
-    @media (width <= 700px) {
-        time {
-            text-align: right;
-        }
-    }
+  }
 </style>

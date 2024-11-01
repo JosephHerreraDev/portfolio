@@ -2,28 +2,28 @@
 import Layout from "@/layouts/Layout.astro";
 
 import Heading from "@/components/sections/Heading.astro";
-import BlogHeader from "@/components/blog/BlogHeader.astro"
+import BlogHeader from "@/components/blog/BlogHeader.astro";
 import { basics } from "@cv";
 const { name, label } = basics;
 ---
 
 <Layout title={`${name} - ${label}`}>
-	<main>
-		<Heading/>
-		<BlogHeader/>
-	</main>
+  <main>
+    <Heading />
+    <BlogHeader />
+  </main>
 </Layout>
 
 <style>
-	main {
-		padding: 4rem;
-		margin: auto;
-		width: 100%;
-	}
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
 
-	@media (width <= 700px) {
-		main {
-			padding: 2rem;
-		}
-	}
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
 </style>

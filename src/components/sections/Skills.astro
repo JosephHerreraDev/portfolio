@@ -15,53 +15,53 @@ import Python from "@/icons/Python.astro";
 import Sql from "@/icons/Sql.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
-    Android,
-    CSharp,
-    Css,
-    Git,
-    Github,
-    Html,
-    JavaScript,
-    Networking,
-    Nodejs,
-    Python,
-    Sql,
+  Android,
+  CSharp,
+  Css,
+  Git,
+  Github,
+  Html,
+  JavaScript,
+  Networking,
+  Nodejs,
+  Python,
+  Sql,
 };
 ---
 
 <Section title="Skills">
-    <ul>
-        {
-            skills.map(({ name }) => {
-                const iconName = name === "Next.js" ? "Next" : name;
-                const Icon = SKILLS_ICONS[iconName];
+  <ul>
+    {
+      skills.map(({ name }) => {
+        const iconName = name === "Next.js" ? "Next" : name;
+        const Icon = SKILLS_ICONS[iconName];
 
-                return (
-                    <li>
-                        {Icon && <Icon />} <span>{name}</span>
-                    </li>
-                );
-            })
-        }
-    </ul>
+        return (
+          <li>
+            {Icon && <Icon />} <span>{name}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
 
 <style>
-    ul {
-        display: inline-flex;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
+  ul {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
-    li {
-        align-items: center;
-        background: #eee;
-        border-radius: 6px;
-        color: black;
-        display: flex;
-        font-size: 0.8rem;
-        font-weight: 500;
-        gap: 4px;
-        padding: 0.2rem 0.6rem;
-    }
+  li {
+    align-items: center;
+    background: #eee;
+    border-radius: 6px;
+    color: black;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 4px;
+    padding: 0.2rem 0.6rem;
+  }
 </style>
