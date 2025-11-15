@@ -11,7 +11,7 @@ import Github from "@/icons/Github.astro";
 import Worldmap from "@/icons/Worldmap.astro";
 import Language from "@/icons/Language.astro";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles} = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -19,8 +19,6 @@ const SOCIAL_ICONS: Record<string, any> = {
     Linkedin,
     X,
 };
-
-const printInfo = [email, phone].filter(Boolean).join(` • `);
 
 const allFluencyLevels = languages.map(({ fluency }) => fluency);
 const uniqueFluencyLevels = [...new Set(allFluencyLevels)];
@@ -51,36 +49,7 @@ if (uniqueFluencyLevels.length === 1) {
                 <Language /> 
                 {languagesList}
             </span>
-            <footer class="print">
-                <div class="print">
-                    {printInfo}
-                </div>
-            </footer>
             <footer class="no-print">
-                {
-                    email && (
-                        <a
-                            href={`mailto:${email}`}
-                            title={`Send an email to ${name} to the address ${email}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Email />
-                        </a>
-                    )
-                }
-                {
-                    phone && (
-                        <a
-                            href={`tel:${phone}`}
-                            title={`Call ${name} to the number ${phone}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Phone />
-                        </a>
-                    )
-                }
                 {
                     profiles.map(({ network, url, username }) => {
                         const Icon = SOCIAL_ICONS[network];
