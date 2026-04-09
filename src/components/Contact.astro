@@ -1,0 +1,55 @@
+---
+import X from "../icons/X.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import Github from "../icons/Github.astro";
+
+interface Profile {
+    network: string;
+    url?: string;
+    username?: string;
+}
+
+const profiles: Profile[] = [
+    {
+        network: "Linkedin",
+        username: "Joseph Herrera León",
+        url: "https://www.linkedin.com/in/joseph-herrera-leon/",
+    },
+    {
+        network: "Github",
+        username: "JosephHerreraDev",
+        url: "https://github.com/JosephHerreraDev",
+    },
+    {
+        network: "X",
+        username: "Thelevdev",
+        url: "https://x.com/Thelevdev",
+    },
+];
+
+const SOCIAL_ICONS: Record<string, any> = {
+    Github,
+    Linkedin,
+    X,
+};
+---
+
+<footer class="no-print flex gap-1 mt-2 text-[0.65rem] text-[#555]">
+    {
+        profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+
+            return (
+                <a
+                    href={url}
+                    title={`Visit the profile of Joseph in ${network}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center w-8 h-8 p-1 border border-[#eee] rounded-md text-[#777] transition-all duration-300 hover:bg-[#eee] hover:border-[#ddd]"
+                >
+                    <Icon />
+                </a>
+            );
+        })
+    }
+</footer>

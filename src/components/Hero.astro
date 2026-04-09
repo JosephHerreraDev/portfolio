@@ -1,0 +1,43 @@
+---
+import Worldmap from "../icons/Worldmap.astro";
+import Language from "../icons/Language.astro";
+import Section from "../components/Section.astro";
+import Contact from "./Contact.astro";
+---
+<Section>
+  <div class="flex flex-row items-center justify-between gap-4 max-[700px]:flex-col-reverse">
+    
+    <div class="flex flex-col gap-2 pr-8 max-[700px]:pr-0 max-[700px]:items-center max-[700px]:text-center">
+      
+      <h1 class="text-2xl font-bold">
+        Joseph Herrera León
+      </h1>
+
+      <h2 class="text-[1.1rem] font-medium text-[#444] text-balance">
+        Software Engineer & Full-Stack Developer
+      </h2>
+
+      <span class="flex items-center gap-1 text-[0.85rem] tracking-[-0.05rem] text-[#666]">
+        <Worldmap />
+        Guanajuato, MX
+      </span>
+
+      <span class="flex items-center gap-1 text-[0.85rem] tracking-[-0.05rem] text-[#666]">
+        <Language />
+        Spanish • English
+      </span>
+
+     <Contact/> 
+
+    </div>
+
+    <figure class="max-[700px]:flex max-[700px]:justify-center max-[700px]:items-center max-[700px]:mx-auto">
+      <img
+        src="https://avatars.githubusercontent.com/u/60113321?s=400&u=dd66434578596277ac584fbfac82e3d407e854bb&v=4"
+        alt="Joseph Herrera"
+        class="w-32 aspect-square object-cover rounded-2xl"
+      />
+    </figure>
+
+  </div>
+</Section>
