@@ -1,12 +1,42 @@
 ---
 import Section from "./Section.astro";
+interface Post {
+    url: string;
+    name: string;
+}
+
+const posts: Post[] = [
+    {
+        name: "I won't download your app",
+        url: "https://www.0xsid.com/blog/wont-download-your-app",
+    },
+    {
+        name: "Personal encyclopedias",
+        url: "https://whoami.wiki/blog/personal-encyclopedias",
+    },
+    {
+        name: "Windows 11 Gaslight",
+        url: "https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/",
+    },
+];
 ---
 
 <Section title="Recommended">
     <p>List of Articles I enjoyed and want to share.</p>
     <ol class="font-bold list-disc list-inside">
-        <li><a href="https://www.0xsid.com/blog/wont-download-your-app">won't download your app</a></li>
-        <li><a href="https://whoami.wiki/blog/personal-encyclopedias">personal encyclopedias</a></li>
-        <li><a href="https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/">Windows 11 Gaslight</a></li>
+        {
+            posts.map(({ name, url }) => (
+                <li>
+                    <a
+                        title={`Read about ${name}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={url}
+                    >
+                        {name}
+                    </a>
+                </li>
+            ))
+        }
     </ol>
 </Section>
