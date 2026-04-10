@@ -14,61 +14,63 @@ interface Project {
 
 const projects: Project[] = [
     {
-        name: "Mascotapp",
+        name: "Hypertrophy",
+        isActive: true,
+        startDate: new Date("2025-04-09"),
+        endDate: "Currently working",
+        description:
+            "Full-Stack Application to track training sessions, designed to be simple and effective.",
+        highlights: [".Net", "C#", "PostgreSQL"],
+        url: "https://github.com/JosephHerreraDev/Hypertrophy",
+    },
+    {
+        name: "Prometheus",
         isActive: true,
         startDate: new Date("2024-03-07"),
         endDate: "Currently working",
         description:
-            "Application that detects the bread of the owners pet, and based on this information it provides care reccomendations.",
-        highlights: ["React Native", "firebase"],
-        url: null,
-    },
-    {
-        name: "Data mining",
-        isActive: false,
-        startDate: new Date("2024-03-07"),
-        endDate: "Currently working",
-        description:
-            "Using Google Collab with Python I made an analysis of a data sample for data mining.",
-        highlights: ["Python", "Data Mining"],
-        url: "https://github.com/JosephHerreraDev/mineria_de_datos",
+            "A personal \"rice\" or personalized desktop environment, made with Arch, Hyperland, and many more tools.",
+        highlights: ["Arch", "Hyperland", "Bash"],
+        url: "https://github.com/JosephHerreraDev/prometheus",
     },
 ];
 ---
 
 <Section title="Projects">
-    <ul>
+    <ul class="grid gap-4 -mx-4 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))] max-[700px]:grid-cols-1 max-[700px]:mx-0">
         {
             projects.map(({ url, description, highlights, name, isActive }) => {
                 return (
-                    <li>
-                        <article>
-                            <header>
-                                <h3 class="flex justify-between">
-                                    <a
-                                        href="/work"
-                                        title={`See project ${name}`}
-                                    >
-                                        {name}
-                                    </a>
-                                    {isActive && <span>&bull;</span>}
+                    <li
+                        class="cursor-pointer"
+                        onclick={`window.location.href='/projects/${name.toLocaleLowerCase()}'`}
+                    >
+                        <article class="rounded-lg border border-[#f2f2f2] gap-4 flex flex-col p-4 h-full max-[700px]:border-none max-[700px]:shadow-[0_1px_1px_#f2f2f2] max-[700px]:p-0 max-[700px]:pb-4">
+                            <header class="flex-1">
+                                <h3 class="flex items-center gap-2 mb-1">
+                                    {name}
+                                    {isActive && <span class="text-[rgb(0,188,47)]">&bull;</span>}
                                     {url && (
                                         <a
                                             href={url}
                                             title={`See project ${name} repository`}
                                             target="_blank"
                                             rel="noopener noreferrer"
+                                            onclick="event.stopPropagation()"
                                         >
                                             <Github />
                                         </a>
                                     )}
                                 </h3>
-
-                                <p>{description}</p>
+                                <p class="text-xs leading-[1.2rem] mb-1">{description}</p>
                             </header>
-                            <footer>
+                            <footer class="flex flex-wrap gap-1 text-[0.6rem]">
                                 {highlights.map((highlight) => {
-                                    return <span>{highlight}</span>;
+                                    return (
+                                        <span class="rounded-md bg-[#eee] text-[#444] text-[0.6rem] font-medium px-[0.6rem] py-[0.2rem]">
+                                            {highlight}
+                                        </span>
+                                    );
                                 })}
                             </footer>
                         </article>
@@ -78,101 +80,3 @@ const projects: Project[] = [
         }
     </ul>
 </Section>
-<style>
-    ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin-inline: -16px;
-    }
-
-    article {
-        border-radius: 8px;
-        border: 1px solid #f2f2f2;
-        gap: 16px;
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-        height: 100%;
-    }
-
-    article header {
-        flex: 1;
-    }
-
-    article h3 {
-        margin-bottom: 4px;
-    }
-
-    article a {
-        color: #111;
-    }
-
-    article a:hover {
-        text-decoration: underline;
-    }
-
-    article p {
-        font-size: 0.75rem;
-        line-height: 1.2rem;
-        margin-bottom: 4px;
-    }
-
-    article h3 span {
-        color: rgb(0, 188, 47);
-        animation-name: flicker;
-        animation-duration: 3s;
-        animation-timing-function: ease-in;
-        animation-iteration-count: infinite;
-    }
-
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-        font-size: 0.6rem;
-    }
-
-    footer span {
-        border-radius: 6px;
-        background: #eee;
-        color: #444;
-        font-size: 0.6rem;
-        font-weight: 500;
-        padding: 0.2rem 0.6rem;
-    }
-
-    .github-code-link {
-        margin-left: 5px;
-    }
-
-    @keyframes flicker {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.25;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @media (width <= 700px) {
-        ul {
-            margin-inline: 0px;
-        }
-
-        article {
-            border: none;
-            box-shadow: 0 1px 1px #f2f2f2;
-            padding: 0 0 16px 0;
-        }
-    }
-
-    @media print {
-        article h3 span {
-            animation-name: none;
-        }
-    }
-</style>
