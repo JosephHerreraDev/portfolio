@@ -1,7 +1,66 @@
 ---
 import Section from "./Section.astro";
+
+const { slice } = Astro.props;
+
+interface PostFrontmatter {
+  title: string;
+  description?: string;
+  date: string;
+}
+
+type PostModule = {
+  url: string;
+  frontmatter: PostFrontmatter;
+};
+
+const allPosts = Object.values(
+  import.meta.glob<PostModule>("../pages/posts/*.md", { eager: true })
+);
+
+const recentPosts = allPosts
+  .filter((post) => post.url && post.frontmatter)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).getTime() -
+      new Date(a.frontmatter.date).getTime()
+  )
+  .slice(0, slice || allPosts.length);
 ---
 
-<Section title="Latest Articles">
-    
+<Section title={slice ? "Latest Articles" : "Articles"}>
+  <ul class="flex flex-col divide-y divide-[#f2f2f2]">
+    {recentPosts.map(({ url, frontmatter }) => (
+      <li class="first:pt-0 last:pb-0">
+        <a href={url} class="block py-3">
+          <article class="flex justify-between items-start gap-4">
+            <div>
+              <h3 class="text-sm font-medium leading-snug mb-1">
+                {frontmatter.title}
+              </h3>
+
+              {frontmatter.description && (
+                <p class="text-xs text-[#666] leading-snug">
+                  {frontmatter.description}
+                </p>
+              )}
+            </div>
+
+            {frontmatter.date && (
+              <time
+                datetime={frontmatter.date}
+                class="text-xs text-[#999] whitespace-nowrap"
+              >
+                {new Date(frontmatter.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </time>
+            )}
+          </article>
+        </a>
+      </li>
+    ))}
+  </ul>
 </Section>
